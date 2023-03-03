@@ -54,7 +54,7 @@ function objetoComoParametro(usuario) {
     usuario.email
 }
 
-muitosParametros("nome", "telefone", ...)
+muitosParametros("nome", "telefone", "...")
 
 const dadosDoUsuario = {
     nome: "",
