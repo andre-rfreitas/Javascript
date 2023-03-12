@@ -27,27 +27,51 @@ Calcule o preço do imóvel
 - Se tiver 3 quartos, o m2 é 1.5x
 */
 
-function calcularImovel(metragem, quartos) {
-  let m2 = 3000;
-  let preco = 0;
+// function calcularImovel(metragem, quartos) {
+//   let m2 = 3000;
+//   let preco = 0;
 
-  switch (quartos) {
-    case 1:
-    default:
-      preco = metragem * n2;
-      break;
-    case 2:
-      preco = metragem * (n2 + 1.2);
-      break;
-    case 3:
-      preco = metragem * (n2 * 1.5);
-      break;
-  }
+//   switch (quartos) {
+//     case 1:
+//     default:
+//       preco = metragem * n2;
+//       break;
+//     case 2:
+//       preco = metragem * (n2 + 1.2);
+//       break;
+//     case 3:
+//       preco = metragem * (n2 * 1.5);
+//       break;
+//   }
 
-  return preco;
+//   return preco;
+// }
+
+// let metragem = 123;
+// let quartos = 3;
+// let preco = calcularImovel(metragem, quartos);
+// console.log(`A casa custa ${preco}`);
+
+
+
+/*
+Crie uma função que valide o usuário e senha.
+Usuário correto: pedro
+senha: 123
+*/
+// Uso da função
+let usuario = "pedro"
+let senha = "123"
+let validacao = validar(usuario, senha)
+if(validacao) {
+  console.log("Acesso concedido.")
+} else {
+  console.log("Acesso NEGADO!")
 }
 
-let metragem = 123;
-let quartos = 3;
-let preco = calcularImovel(metragem, quartos);
-console.log(`A casa custa ${preco}`);
+function validar (usuario, senha) {
+ if (usuario === "pedro" && senha === "123") {
+  return true
+ } else {
+  return false }
+}
