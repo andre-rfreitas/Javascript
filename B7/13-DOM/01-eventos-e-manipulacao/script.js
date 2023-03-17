@@ -12,3 +12,10 @@ function clicou() {
 
 let botao = document.querySelector(".botao")
 botao.addEventListener("click", clicou)
+
+function clicado() {
+    const teste = document.querySelector("#teste")
+    const ul = teste.querySelector("ul")
+    
+    ul.innerHTML += "<li>Item alterado</li>"
+}
